@@ -33,7 +33,7 @@ app.post("/submit", (req, res) => {
   const data = {
     adj: randomAdj,
     noun: randomNoun,
-    year: year,
+    currentYear: year,
   };
   //2. Send the index.ejs as a response and add the adjective and noun to the res.render
   res.render("index.ejs", data);

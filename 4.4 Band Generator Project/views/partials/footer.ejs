@@ -2,7 +2,10 @@
 
 <footer>
   <!-- Step 4 - Add a dynamic year to the footer using JS. -->
-  <p>Copyright © <%= year %></p>
+  <% if (locals.currentYear) { %>
+    <p>Copyright © <%= currentYear %></p>
+  <% } else { %>
+  <% } %>
 </footer>
 </body>
 
